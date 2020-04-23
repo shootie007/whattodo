@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>CREATE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <p>新規ユーザーの作成</p>
+    <form class="" action="" method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit" name="create">作成</button>
+    </form>
+  </body>
+</html>
